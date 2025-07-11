@@ -1,0 +1,68 @@
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+  padding: 2rem;
+}
+
+.App {
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #4f46e5;
+  font-weight: 700;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+li {
+  background: #f1f5f9;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  transition: background 0.2s;
+}
+li:last-child {
+  margin-bottom: 0;
+}
+li label {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+input[type="checkbox"] {
+  accent-color: #6366f1;
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 1em;
+  cursor: pointer;
+}
+li[style*="line-through"] {
+  color: #a1a1aa;
+  background: #e0e7ef;
+}
